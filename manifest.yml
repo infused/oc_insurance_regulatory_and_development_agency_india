@@ -1,9 +1,9 @@
 {
-  "bot_id": "insurance_regulatory_and_development_agency_india",
-  "title": "Insurance Regulatory and Development Agency (India)",
-  "description": "Scape insurance organizations Insurance Regulatory and Development Agency (India)",
+  "bot_id": "insurance_regulatory_and_development_authority_of_india",
+  "title": "Insurance Regulatory and Development Authority of India",
+  "description": "Scape insurance organizations for Insurance Regulatory and Development Authority of India",
   "author": "Keith Morrison <keithm@infused.org>",
-  "public_repository": "https://github.com/infused/oc_insurance_regulatory_and_development_agency_india",
+  "public_repository": "https://github.com/infused/oc_insurance_regulatory_and_development_authority_of_india",
   "language": "ruby",
   "tags": ["bot", "India", "world-finance-licences", "medium", "mapthebanks"],
   "data_type": "primary data",
@@ -19,7 +19,7 @@
   ],
   "frequency": "monthly",
   "publisher": {
-    "name": "Insurance Regulatory and Development Agency (India)",
+    "name": "Insurance Regulatory and Development Authority of India",
     "url": "https://www.irda.gov.in/ADMINCMS/cms/NormalData_Layout.aspx?page=PageNo2120&mid=9.3.7",
     "terms": "unknown",
     "terms_url": "unknown"
