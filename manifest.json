@@ -28,7 +28,7 @@
     {
       "file": "licence_transformer.rb",
       "data_type": "simple-licence",
-      "identifying_fields": ["company_name"]
+      "identifying_fields": ["licence_number"]
     }
   ]
 }
