@@ -4,10 +4,6 @@ require 'json'
 require 'mechanize'
 require 'turbotlib'
 
-def clean_string(s)
-  s.gsub(/\A[[:space:]]*(.*?)[[:space:]]*\z/) { $1 }
-end
-
 urls = {
   'Insurance Broker' => 'https://www.irda.gov.in/ADMINCMS/cms/NormalData_Layout.aspx?page=PageNo2120&mid=9.3.7',
 }
