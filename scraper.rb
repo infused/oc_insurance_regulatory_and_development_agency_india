@@ -24,7 +24,7 @@ urls.each do |category, url|
       data = {
         cert_no: cert_no,
         license_code_no: co.search('td')[1].inner_text,
-        applicant_name: co.search('td')[2].inner_text,
+        company_name: co.search('td')[2].inner_text,
         address: co.search('td')[3].inner_text,
         phone: co.search('td')[4].inner_text,
         nature_of_application: co.search('td')[5].inner_text,
