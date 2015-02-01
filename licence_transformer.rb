@@ -17,7 +17,6 @@ STDIN.each_line do |line|
   licence_record = {
     company_name: raw['company_name'],
     licence_number: raw['license_code_no'],
-    jurisdiction_classification: raw['nature_of_application'],
     regulator: 'Insurance Regulatory and Development Authority of India',
     company_jurisdiction: 'India',
     licence_jurisdiction: 'India',
