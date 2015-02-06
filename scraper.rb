@@ -2,6 +2,10 @@
 
 require 'json'
 require 'nokogiri'
+<<<<<<< HEAD
+=======
+require 'open-uri'
+>>>>>>> use nokogiri directly
 require 'turbotlib'
 require 'open-uri'
 
@@ -12,8 +16,8 @@ urls = {
 urls.each do |category, url|
   doc = Nokogiri(open(url))
 
-  doc.search('#tab1 table table table table tr').each do |row|
-    cert_no = row.search('td')[0].inner_text.strip rescue nil
+  doc.search('#tab1 table table table table tr').each do |co|
+    cert_no = co.search('td')[0].inner_text.strip rescue nil
 
     if cert_no =~ /\A\d{3}\Z/
       data = {
