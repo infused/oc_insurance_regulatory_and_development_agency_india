@@ -16,6 +16,8 @@
   "files": [
     "scraper.rb",
     "licence_transformer.rb"
+    "scraper/insurance_broker.rb",
+    "scraper/insurer.rb"
   ],
   "frequency": "monthly",
   "publisher": {

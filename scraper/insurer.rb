@@ -1,5 +1,5 @@
 module Scraper
-  class LifeInsurer
+  class Insurer
     URLs = {
       'Life Insurer' => 'https://www.irda.gov.in/ADMINCMS/cms/NormalData_Layout.aspx?page=PageNo129&mid=3.1.9',
     }
