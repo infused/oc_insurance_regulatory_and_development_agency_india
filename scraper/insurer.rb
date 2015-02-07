@@ -2,6 +2,7 @@ module Scraper
   class Insurer
     URLs = {
       'Life Insurer' => 'https://www.irda.gov.in/ADMINCMS/cms/NormalData_Layout.aspx?page=PageNo129&mid=3.1.9',
+      'Non-Life Insurers' => 'https://www.irda.gov.in/ADMINCMS/cms/NormalData_Layout.aspx?page=PageNo264&mid=3.2.10'
     }
 
     def self.clean_string(s)
