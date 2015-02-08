@@ -17,7 +17,8 @@
     "scraper.rb",
     "licence_transformer.rb"
     "scraper/insurance_broker.rb",
-    "scraper/insurer.rb"
+    "scraper/insurer.rb",
+    "scraper/reinsurer.rb"
   ],
   "frequency": "monthly",
   "publisher": {
