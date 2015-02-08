@@ -15,7 +15,8 @@
   },
   "files": [
     "scraper.rb",
-    "licence_transformer.rb"
+    "licence_transformer.rb",
+    "string_cleaner.rb",
     "scraper/insurance_broker.rb",
     "scraper/insurer.rb",
     "scraper/reinsurer.rb"

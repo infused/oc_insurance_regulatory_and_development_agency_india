@@ -1,21 +1,10 @@
 module Scraper
   class Reinsurer
+    extend StringCleaner
+
     URLs = {
       'Re-Insurers' => 'https://www.irda.gov.in/ADMINCMS/cms/NormalData_Layout.aspx?page=PageNo1687&mid=3.3.6'
     }
-
-    def self.clean_string(s)
-      clean = s.dup.encode(Encoding::ASCII, invalid: :replace, undef: :replace, replace: '')
-
-      clean.squeeze!(' ')              # remove extra spaces
-      clean.strip!                     # remove leading/trailing whitespace
-      clean.gsub!(/,,/, ',')           # remove double commas
-      clean.gsub!(/,\ ,/, '')          # remove double commas separated by a space
-      clean.gsub!(/^,/, '')            # remove leading commas
-      clean.gsub!(/,$/, '')            # remove trailing commas
-      clean.gsub!(/,[^\ ]/, ', ')      # add space after commas
-      clean.strip
-    end
 
     def self.scrape
       URLs.each do |category, url|
@@ -30,10 +19,10 @@ module Scraper
             phone = contact_parts.detect {|s| s =~ /(tele*|phone)/i }.gsub(/[^\d\(\)\.\:]/, '') rescue nil
 
             data = {
-              cert_no: cert_no,
+              cert_no: clean_string(cert_no),
               company_name: clean_string(co.search('td')[1].inner_text),
               principal_officer: clean_string(co.search('td')[2].inner_text.split("\r\n").join(', ')),
-              phone: phone,
+              phone: clean_string(phone),
               category: category,
               source_url: url,
               sample_date: Time.now
